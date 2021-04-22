@@ -8,12 +8,11 @@ var special = ["!","#", "$", "%", "&", "(", ")", "*", "+", "-", ".","/", ":", ";
 var generateBtn = document.querySelector("#generate");
 
 function getPasswordOptions() {
-  var length = prompt()
-
-  var upperCase = confirm()
-  var lowerCase = confirm()
-  var numbers = confirm()
-  var special = confirm()
+  var length = prompt("How many characters do you want in your password?")
+  var upperCase = confirm("Do you want Upper Case characters in password?");
+  var lowerCase = confirm("Do you want Lower Case characters in password?");
+  var numbers = confirm("Do you want number characters in password");
+  var special = confirm("Do you want special charcters in password");
 
 
 }
@@ -46,7 +45,7 @@ function randomChar(arr) {
 }
 
 function generatePassword(length) {
- var length = prompt(" select between 8-128 characters ");
+    var length = prompt(" select between 8-128 characters ");
  for (i = 0; i <= length; i++) {
    password = password.concat(randomChar(finalArray));
  }
