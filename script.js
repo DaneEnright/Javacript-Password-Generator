@@ -8,14 +8,39 @@ var special = ["!","#", "$", "%", "&", "(", ")", "*", "+", "-", ".","/", ":", ";
 var generateBtn = document.querySelector("#generate");
 
 function getPasswordOptions() {
-  var length = prompt("How many characters do you want in your password?")
-  var upperCase = confirm("Do you want Upper Case characters in password?");
-  var lowerCase = confirm("Do you want Lower Case characters in password?");
-  var numbers = confirm("Do you want number characters in password");
-  var special = confirm("Do you want special charcters in password");
+  var length = prompt("How many characters do you want in your password?");
 
-
+  return
+  
 }
+
+function upperCase() {
+  var upCase = prompt("Do you want Upper Case characters in password?");
+  var upperCase = confirm("Do you want Upper Case characters in password?");
+  return
+}
+
+function lowerCase(){
+  var lowCase = prompt("Do you want Lower Case characters in password?");
+  var lowerCase = confirm("Do you want Lower Case characters in password?");
+  return
+}
+
+function numbers() {
+  var num = prompt("Do you want number characters in password");
+  var numbers = confirm("Do you want number characters in password");
+  return
+}
+
+function special() {
+  var spec = ("Do you want special charcters in password");
+  var special = confirm("Do you want special charcters in password");
+  return
+}
+
+// getPasswordOptions()
+
+
 
 function generatePassword() {
   var passwordOptions = getPasswordOptions()
